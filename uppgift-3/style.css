@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 50px;
+}
+
+.checkbox-wrapper {
+  padding: 5px;
+  border-bottom: 1px solid black;
+  margin-bottom: 32px;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: max-content;
+  gap: 5px;
+}
+
+.task {
+  padding: 10px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
