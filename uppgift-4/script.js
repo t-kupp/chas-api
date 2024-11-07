@@ -35,13 +35,15 @@ function drawList(albumData) {
 }
 
 function drawImages(photoData, albumId) {
+  console.log(photoData);
+
   // Filter photos to only include the first 5 photos that are matching the albumId
   const filteredPhotos = photoData.filter((photo) => photo.albumId == albumId).slice(0, 5);
 
   // Render the filtered fotos
   filteredPhotos.forEach((photo) => {
     const newImg = document.createElement("img");
-    newImg.src = photo.url;
+    newImg.src = photo.thumbnailUrl;
     newImg.alt = `photo-id: ${photo.albumId}`;
     newImg.classList.add("albumImage");
     imgContainer.appendChild(newImg);
