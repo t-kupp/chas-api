@@ -35,8 +35,6 @@ function drawList(albumData) {
 }
 
 function drawImages(photoData, albumId) {
-  console.log(photoData);
-
   // Filter photos to only include the first 5 photos that are matching the albumId
   const filteredPhotos = photoData.filter((photo) => photo.albumId == albumId).slice(0, 5);
 
