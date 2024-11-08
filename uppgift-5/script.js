@@ -8,13 +8,12 @@ async function getData() {
   const postsData = await postsResponse.json();
   const commentsData = await commentsResponse.json();
   displayPosts(postsData, commentsData);
-  console.log(postsData, commentsData);
+  console.log("postsData:", postsData, "commentsData:", commentsData);
 }
 getData();
 
 function displayPosts(postsData, commentsData) {
   const posts = postsData.splice(0, 5);
-  console.log(posts);
 
   posts.forEach((post) => {
     // Create post container
